@@ -1,0 +1,136 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	background-color: #3AB4F2;
+	align-items: center;
+}
+
+#container{
+	display: flex;
+	flex-direction: column;
+	background-color: #FFFFFF;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.pricing-panel{
+	padding: 5px;
+	margin: 5px;
+	border-bottom: 2px solid black;
+}
+
+.pricing-panel:last-child{
+	border-bottom: none;
+}
+
+h4{
+	font-size: 1.5rem;
+	color: #7A4069;
+	font-style: bold;
+}
+
+h3{
+	font-size: 2rem;
+	color: #1F4690;
+	font-style: bold;
+}
+
+@media (max-width: 500px) and (min-width: 280px){
+	#container{
+		width: 90%;
+	}
+
+	img{
+		width: 60%;
+		height: 40%;
+	}
+}
+
+/* When viewport width is <= 280px, container width should be 400px */
+@media (max-width: 280px){
+	#container{
+		width: 400px;
+	}
+}
+
+@media (min-width: 1200px){
+	#container{
+		flex-direction: row;
+	}
+
+	.pricing-panel{
+		border-bottom: none;
+		border-right: 2px solid black;
+	}
+
+	.pricing-panel:last-child{
+		border-right: none;
+	}
+}
+
+button{
+	padding: 10px;
+	color: #1F4690;
+	background-color: #FFFFFF;
+	border: 1px solid #1F4690;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+button:hover{
+	color:  #FFFFFF;
+	background-color: #1F4690;
+	border: 1px solid #FFFFFF;
+	cursor: pointer;
+}

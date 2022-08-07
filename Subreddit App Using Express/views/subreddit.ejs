@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- includes('partials/head') %>
+
+<body>
+    <h1> <%= name %> </h1>
+    <h2><%= subscribers %> Total Subscribers</h2>
+
+    <b><%= description %></b>
+    <div>
+        <% for(let i = 0; i < posts.length; i++){ %>
+            <div>
+                <p>Author: <%= posts[i].author %></p>
+                <p>Title: <%= posts[i].title %></p>
+
+                <% if(posts[i].img){ %>
+                    <img src="<%= posts[i].img %> " alt="">
+                <% } %>
+            </div>
+
+            <hr>
+        <% } %>
+    </div>
+</body>
+</html>

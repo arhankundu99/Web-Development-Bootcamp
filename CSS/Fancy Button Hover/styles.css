@@ -1,0 +1,30 @@
+body{
+    background-color: #2C3639;
+    height: 100vh;
+    margin: 0;
+}
+
+#fancy-btn{
+    position: absolute;
+    height: 5%;
+    width: 15%;
+    font-size: 100%;
+    top: 45%;
+    left: 42%;
+
+    background-color: #2C3639;
+
+    border-style: solid;
+    border-color: #E7AB79;
+    border-width: 2%;
+
+    color: #E7AB79;
+    transition: 1s;
+}
+
+#fancy-btn:hover{
+    border-color: #8B9A46;
+    color: #8B9A46;
+    top: 44%;
+    box-shadow: 2px 2px #8B9A46;
+}

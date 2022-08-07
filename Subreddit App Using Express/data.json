@@ -1,0 +1,30 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "author": "colt",
+            "post": "blah blah",
+            "comments": [
+                {
+                    "id": 1,
+                    "comment": "this is so funny"
+                },
+                {
+                    "id": 2,
+                    "comment": "this is not funny at all"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "author": "Tyra",
+            "post": "papapapa",
+            "comments": [
+                {
+                    "id": 3,
+                    "comment": "ughhhh"
+                }
+            ] 
+        }
+    ]
+}

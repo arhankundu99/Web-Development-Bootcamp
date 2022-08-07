@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a new product</title>
+</head>
+<body>
+    <h1>Form to add new products!</h1>
+    <form action="/products" method="post">
+        <label for="name">Product Name:</label>
+        <input type="text" name="name" placeholder="Product Name" id = "name">
+        <hr>
+        <label for="price">Price:</label>
+        <input type="number" name="price" placeholder="Price">
+        <hr>
+        <label for="category">Category:</label>
+        <select name="category" id="category">
+            <option value="fruit">fruit</option>
+            <option value="vegetable">vegetable</option>
+            <option value="dairy">dairy</option>
+        </select>
+        <% for(let i = 0; i < 3; i++){ %>
+            <br>
+        <% } %>
+        <button type="submit">Add a new product</button>
+    </form>
+</body>
+</html>

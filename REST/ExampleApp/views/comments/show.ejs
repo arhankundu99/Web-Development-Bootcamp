@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Specific Comment</title>
+</head>
+<body>
+    <h1>Comment ID: <%= comment.id %></h1>
+    <h2>UserName: <%= comment.username %> </h2>
+    <h2>Comment: <%= comment.comment %> </h2>
+
+
+    <a href="http://localhost:3000/comments/<%= comment.id %>/edit">Edit Comment</a>
+    
+    <hr>
+    <form action="http://localhost:3000/comments/<%= comment.id %>?_method=DELETE" method="post">
+        <button type="submit">DELETE COMMENT</button>
+    </form>
+</body>
+</html>

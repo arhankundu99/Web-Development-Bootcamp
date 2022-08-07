@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+h1{
+    font-size: 1rem;
+    margin: 1.66%;
+}
+
+.photo{
+    display: inline-block;
+    height: 40%;
+    width: 30%;
+    background-color: black;
+    margin: 1.66%;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Make a post request!</h1>
+    <form action="http://localhost:3000/comments" method="post">
+        <label for="username">UserName: </label>
+        <input type="text" name ="username" id = "username" placeholder="Enter username">
+        
+        <% for(let i = 0; i < 3; i++){ %>
+            <br>
+        <% } %>
+
+        <label for="comment">Comment: </label>
+        <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+        
+        <% for(let i = 0; i < 3; i++){ %>
+            <br>
+        <% } %>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <a href="http://localhost:3000/comments">Go Back!</a>
+</body>
+</html>

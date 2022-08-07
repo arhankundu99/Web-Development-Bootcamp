@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+#container{
+    background-color: #003049;
+    width: 90vw;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+}
+
+#container div{
+    width: 24vw;
+    height: 24vw;
+    margin: 2rem;
+    flex-grow: 1;
+}
+
+
