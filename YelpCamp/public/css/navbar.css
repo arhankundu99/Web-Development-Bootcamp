@@ -1,0 +1,10 @@
+#auth-container{
+    display: flex; 
+    justify-content: flex-end;
+}
+
+@media(max-width: 992px){
+    #auth-container{
+        display: block;
+    }
+}
